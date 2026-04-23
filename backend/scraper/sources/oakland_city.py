@@ -9,6 +9,7 @@ with sync_playwright() as p:
     page = browser.new_page()
 
     source = "https://oakland.legistar.com/calendar.aspx"
+    print("Source: " + source)
     page.goto(source, timeout=60000, wait_until="domcontentloaded")
     
     rows = rows = page.query_selector_all("tr.rgRow, tr.rgAltRow")
@@ -28,11 +29,14 @@ with sync_playwright() as p:
             combined = datetime.combine(date.date(), time.time())
             url = "https://oakland.legistar.com/" + tds[5].query_selector("a").get_attribute("href")
 
+            description = "https://oakland.legistar.com/" + str(tds[6].query_selector("a").get_attribute("href"))
+
             # proof:
             print("Title: " + title)
             print("Date/Time: " + str(combined))
             print("Location: " + location)
             print("URL: " + str(url))
+            print("Description:  " + str(description))
             print("--------------")
 
     browser.close()

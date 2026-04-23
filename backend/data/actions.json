@@ -1,13 +1,10 @@
 {
-  "id": "string",
-  "title": "string",
-  "type": "meeting | petition | event | volunteer",
-  "source": "berkeley_city | change_org | org_name",
-  "date": "2025-04-21T18:00:00",
-  "effort_level": 1, 
-  "topics": ["housing", "transit"],
-  "sensitivity": "low | medium | high",
-  "url": "string",
-  "attendees_count": 0,
-  "description_short": "string"
+  "id": "",
+  "title": "",
+  "source": "",
+  "start_time": "",
+  "end_time": "",
+  "description": "",
+  "url": "",
+  "location": ""
 }

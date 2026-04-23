@@ -15,3 +15,7 @@
 # Julianna Log 4/21/2026: 
 # change.org scraping, TO DO: right now, I'm scraping minimum details, for descriptionns and stuff its a lot so would we want a llm to summarize?
 # to run: python backend/scraper/sources/change_org.py
+# to run grassroots: python backend/scraper/sources/grassroots.py
+# to run oakland: python backend/scraper/sources/oakland_city.py
+#
+# we need title, start time, end time, description, url, location for every "action"
